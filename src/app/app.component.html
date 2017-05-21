@@ -2,7 +2,7 @@
   {{title}}
 </h1>
 <ul>
-  <li *ngFor="let todo of todos">
-    {{ todo }}
+  <li *ngFor="let todo of todos; let i = index">
+    <button (click)="deleteTodo(i)">x</button> {{ todo }}
   </li>
 </ul>

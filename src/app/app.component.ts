@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular Todo';
   todos = ['整理房間', '聚餐', '繳卡費', '運動'];
+
+  deleteTodo(index: number) {
+    this.todos.splice(index, 1);
+  }
+
 }
