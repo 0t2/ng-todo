@@ -13,4 +13,9 @@ export class AppComponent {
     this.todos.splice(index, 1);
   }
 
+  addTodo(value: string) {
+    if (value && value.trim())
+      this.todos.push(value);
+  }
+
 }
